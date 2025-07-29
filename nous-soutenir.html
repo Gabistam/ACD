@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Soutenir - Actions Centrafrique Développement</title>
+    <meta name="description" content="Soutenez les actions d'ACD en République Centrafricaine. Faites un don déductible d'impôts pour contribuer au développement durable.">
+    <meta name="keywords" content="don Centrafrique, soutenir association Centrafrique, don déductible impôts, aide développement RCA">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a'
+                        },
+                        secondary: {
+                            500: '#16a34a',
+                            600: '#15803d',
+                            700: '#166534'
+                        },
+                        accent: {
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207'
+                        },
+                        danger: {
+                            500: '#dc2626',
+                            600: '#b91c1c',
+                            700: '#991b1b'
+                        }
+                    },
+                    fontFamily: {
+                        'heading': ['Montserrat', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-secondary-600 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L13.09 6.26L18 5L16.74 9.74L22 11L17.74 12.26L19 17L14.26 15.74L13 20L11.74 15.74L7 17L8.26 12.26L2 11L6.26 9.74L5 5L9.74 6.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="font-heading font-bold text-xl text-gray-900">ACD</h1>
+                        <p class="text-xs text-gray-600">Actions Centrafrique Développement</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="nos-actions.html" class="nav-link">Nos Actions</a>
+                    <a href="qui-sommes-nous.html" class="nav-link">Qui sommes-nous</a>
+                    <a href="nous-soutenir.html" class="nav-link active">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="#donation-form" class="btn-primary hidden sm:inline-flex">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                        Faire un don
+                    </a>
+                    <button class="md:hidden mobile-menu-toggle">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="nos-actions.html" class="nav-link">Nos Actions</a>
+                    <a href="qui-sommes-nous.html" class="nav-link">Qui sommes-nous</a>
+                    <a href="nous-soutenir.html" class="nav-link active">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="#donation-form" class="btn-primary w-full text-center mt-4">Faire un don</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="font-heading font-bold text-4xl lg:text-6xl text-gray-900 mb-6">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
+                            Soutenez
+                        </span> 
+                        notre mission
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                        Votre générosité permet de transformer concrètement la vie des communautés centrafricaines. Chaque don compte pour construire un avenir meilleur.
+                    </p>
+                    <a href="#donation-form" class="btn-primary inline-flex">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                        Faire un don maintenant
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pourquoi nous soutenir -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                        Pourquoi nous soutenir ?
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Votre soutien a un impact direct et mesurable sur le terrain
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-4">Impact concret</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Chaque euro donné se transforme directement en actions concrètes : microcrédits, formation, accès aux soins, éducation.
+                        </p>
+                    </div>
+                    
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition-colors">
+                            <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-4">Urgence humanitaire</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            La situation en Centrafrique nécessite une action immédiate pour répondre aux besoins essentiels des populations.
+                        </p>
+                    </div>
+                    
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-200 transition-colors">
+                            <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-4">Transparence totale</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Suivi détaillé de l'utilisation des fonds avec rapports réguliers et transparence financière complète.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact des dons -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                        Votre don en action
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Découvrez l'impact concret de votre générosité
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-600 mb-2">20€</div>
+                            <h4 class="font-semibold text-gray-900 mb-3">Microcrédit</h4>
+                            <p class="text-sm text-gray-600">Permet à une famille de démarrer une activité génératrice de revenus</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-secondary-600 mb-2">50€</div>
+                            <h4 class="font-semibold text-gray-900 mb-3">Éducation</h4>
+                            <p class="text-sm text-gray-600">Finance les fournitures scolaires pour 5 enfants pendant un trimestre</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent-600 mb-2">100€</div>
+                            <h4 class="font-semibold text-gray-900 mb-3">Santé</h4>
+                            <p class="text-sm text-gray-600">Prend en charge les soins médicaux d'une famille pendant 6 mois</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-danger-600 mb-2">200€</div>
+                            <h4 class="font-semibold text-gray-900 mb-3">Formation</h4>
+                            <p class="text-sm text-gray-600">Organise une formation professionnelle pour 10 adultes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire de don -->
+        <section id="donation-form" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                            Faire un don
+                        </h2>
+                        <p class="text-xl text-gray-600">
+                            Votre don est déductible à 66% de vos impôts
+                        </p>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Un don de 100€ ne vous coûte réellement que 34€ après déduction fiscale
+                        </p>
+                    </div>
+                    
+                    <!-- Simulation HelloAsso -->
+                    <div class="bg-gradient-to-br from-primary-50 to-secondary-50 p-8 rounded-2xl">
+                        <div class="text-center mb-8">
+                            <h3 class="font-heading font-semibold text-2xl text-gray-900 mb-4">Choisissez le montant de votre don</h3>
+                            
+                            <!-- Montants suggérés -->
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                <button class="donation-amount bg-white hover:bg-primary-50 border-2 border-primary-200 hover:border-primary-300 p-4 rounded-xl transition-colors" data-amount="25">
+                                    <div class="text-2xl font-bold text-primary-600">25€</div>
+                                    <div class="text-sm text-gray-600 mt-1">Coût réel: 8,50€</div>
+                                </button>
+                                
+                                <button class="donation-amount bg-white hover:bg-primary-50 border-2 border-primary-200 hover:border-primary-300 p-4 rounded-xl transition-colors" data-amount="50">
+                                    <div class="text-2xl font-bold text-primary-600">50€</div>
+                                    <div class="text-sm text-gray-600 mt-1">Coût réel: 17€</div>
+                                </button>
+                                
+                                <button class="donation-amount bg-white hover:bg-primary-50 border-2 border-primary-200 hover:border-primary-300 p-4 rounded-xl transition-colors" data-amount="100">
+                                    <div class="text-2xl font-bold text-primary-600">100€</div>
+                                    <div class="text-sm text-gray-600 mt-1">Coût réel: 34€</div>
+                                </button>
+                                
+                                <button class="donation-amount bg-white hover:bg-primary-50 border-2 border-primary-200 hover:border-primary-300 p-4 rounded-xl transition-colors" data-amount="200">
+                                    <div class="text-2xl font-bold text-primary-600">200€</div>
+                                    <div class="text-sm text-gray-600 mt-1">Coût réel: 68€</div>
+                                </button>
+                            </div>
+                            
+                            <!-- Montant personnalisé -->
+                            <div class="mb-8">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Ou saisissez un montant personnalisé</label>
+                                <div class="max-w-xs mx-auto">
+                                    <div class="relative">
+                                        <input type="number" id="custom-amount" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500" placeholder="Montant en €" min="1">
+                                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <span class="text-gray-500">€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Simulation widget HelloAsso -->
+                            <div class="bg-white p-6 rounded-xl shadow-sm">
+                                <div class="text-center mb-4">
+                                    <svg class="w-16 h-16 mx-auto text-primary-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Plateforme de don sécurisée</h4>
+                                    <p class="text-gray-600 mb-6">
+                                        Le formulaire de don HelloAsso sera intégré ici une fois la campagne configurée.
+                                        Paiement 100% sécurisé avec reçu fiscal automatique.
+                                    </p>
+                                    
+                                    <!-- Bouton temporaire -->
+                                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-dashed border-gray-300">
+                                        <p class="text-gray-500 text-sm mb-3">Widget HelloAsso à intégrer</p>
+                                        <button class="btn-primary" disabled>
+                                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                            </svg>
+                                            Finaliser le don
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 text-sm text-gray-500">
+                                <p>✓ Paiement sécurisé par carte bancaire</p>
+                                <p>✓ Reçu fiscal automatique par email</p>
+                                <p>✓ Déduction fiscale de 66% (particuliers) ou 60% (entreprises)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Autres moyens de soutien -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                        Autres moyens de nous aider
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Votre soutien peut prendre différentes formes
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-4">Devenir bénévole</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Rejoignez notre équipe de bénévoles et apportez vos compétences au service de notre mission.
+                        </p>
+                        <a href="contact.html" class="btn-secondary inline-flex">
+                            Nous rejoindre
+                        </a>
+                    </div>
+                    
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition-colors">
+                            <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-4">Partenariats entreprises</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Votre entreprise peut s'engager à nos côtés par des partenariats RSE ou du mécénat.
+                        </p>
+                        <a href="contact.html" class="btn-secondary inline-flex">
+                            Nous contacter
+                        </a>
+                    </div>
+                    
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-200 transition-colors">
+                            <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 2v12a2 2 0 002 2h6a2 2 0 002-2V6H7z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-4">Diffuser nos actions</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Partagez notre mission autour de vous et aidez-nous à sensibiliser le plus grand nombre.
+                        </p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="w-10 h-10 bg-primary-100 hover:bg-primary-200 rounded-full flex items-center justify-center transition-colors">
+                                <svg class="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary-100 hover:bg-primary-200 rounded-full flex items-center justify-center transition-colors">
+                                <svg class="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transparence financière -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                            Transparence financière
+                        </h2>
+                        <p class="text-xl text-gray-600">
+                            Découvrez comment vos dons sont utilisés
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Répartition des fonds -->
+                        <div class="bg-gray-50 p-8 rounded-2xl">
+                            <h3 class="font-heading font-semibold text-xl text-gray-900 mb-6 text-center">
+                                Utilisation de vos dons
+                            </h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-4 h-4 bg-primary-600 rounded-full"></div>
+                                        <span class="text-gray-700">Actions terrain</span>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">85%</span>
+                                </div>
+                                
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-4 h-4 bg-secondary-600 rounded-full"></div>
+                                        <span class="text-gray-700">Frais administratifs</span>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">10%</span>
+                                </div>
+                                
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-4 h-4 bg-accent-600 rounded-full"></div>
+                                        <span class="text-gray-700">Communication</span>
+                                    </div>
+                                    <span class="font-semibold text-gray-900">5%</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Graphique simplifié -->
+                            <div class="mt-6">
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="h-3 rounded-full flex">
+                                        <div class="bg-primary-600 h-3 rounded-l-full" style="width: 85%"></div>
+                                        <div class="bg-secondary-600 h-3" style="width: 10%"></div>
+                                        <div class="bg-accent-600 h-3 rounded-r-full" style="width: 5%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Engagements -->
+                        <div class="bg-primary-50 p-8 rounded-2xl">
+                            <h3 class="font-heading font-semibold text-xl text-gray-900 mb-6 text-center">
+                                Nos engagements
+                            </h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Comptes certifiés</h4>
+                                        <p class="text-sm text-gray-600">Audit annuel par un expert-comptable</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Reçus fiscaux</h4>
+                                        <p class="text-sm text-gray-600">Envoi automatique et conforme</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Rapports d'activité</h4>
+                                        <p class="text-sm text-gray-600">Publication annuelle des résultats</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Suivi des projets</h4>
+                                        <p class="text-sm text-gray-600">Impact détaillé de chaque action</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <p class="text-gray-600 mb-4">
+                            Consultez nos documents financiers
+                        </p>
+                        <a href="#" class="btn-secondary inline-flex">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                            Télécharger le rapport financier
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="py-16 bg-gradient-to-r from-primary-600 to-secondary-600">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-3xl mx-auto text-white space-y-6">
+                    <h2 class="font-heading font-bold text-3xl lg:text-4xl">
+                        Chaque don compte
+                    </h2>
+                    <p class="text-xl opacity-90">
+                        Votre générosité d'aujourd'hui construit l'espoir de demain pour les communautés centrafricaines.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#donation-form" class="bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 rounded-xl font-semibold transition-colors inline-flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            Faire un don maintenant
+                        </a>
+                        <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-xl font-semibold transition-colors inline-flex items-center justify-center">
+                            Poser une question
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary-600 to-secondary-600 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 6.26L18 5L16.74 9.74L22 11L17.74 12.26L19 17L14.26 15.74L13 20L11.74 15.74L7 17L8.26 12.26L2 11L6.26 9.74L5 5L9.74 6.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-lg">ACD</h3>
+                            <p class="text-sm text-gray-400">Actions Centrafrique Développement</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Association loi 1901 d'aide au développement socio-économique en République Centrafricaine.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="nos-actions.html" class="text-gray-300 hover:text-white transition-colors">Nos Actions</a></li>
+                        <li><a href="qui-sommes-nous.html" class="text-gray-300 hover:text-white transition-colors">Qui sommes-nous</a></li>
+                        <li><a href="nous-soutenir.html" class="text-gray-300 hover:text-white transition-colors">Nous Soutenir</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-4">Contact</h4>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-gray-300">7 allée Jean Zay</p>
+                        <p class="text-gray-300">77200 Torcy</p>
+                        <p class="text-gray-300">Seine-et-Marne, France</p>
+                        <a href="mailto:contact@actions-centrafrique.org" class="text-primary-400 hover:text-primary-300 transition-colors">
+                            contact@actions-centrafrique.org
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-full flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-full flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400 text-center">
+                <p>&copy; 2024 Actions Centrafrique Développement. Association loi 1901 - Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

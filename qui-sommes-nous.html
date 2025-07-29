@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui sommes-nous - Actions Centrafrique Développement</title>
+    <meta name="description" content="Découvrez l'équipe et l'histoire d'ACD, association française créée en 2018 pour le développement socio-économique en République Centrafricaine.">
+    <meta name="keywords" content="ACD association, Actions Centrafrique Développement, Eric Gabirault, équipe ACD">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a'
+                        },
+                        secondary: {
+                            500: '#16a34a',
+                            600: '#15803d',
+                            700: '#166534'
+                        },
+                        accent: {
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207'
+                        },
+                        danger: {
+                            500: '#dc2626',
+                            600: '#b91c1c',
+                            700: '#991b1b'
+                        }
+                    },
+                    fontFamily: {
+                        'heading': ['Montserrat', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-secondary-600 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L13.09 6.26L18 5L16.74 9.74L22 11L17.74 12.26L19 17L14.26 15.74L13 20L11.74 15.74L7 17L8.26 12.26L2 11L6.26 9.74L5 5L9.74 6.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="font-heading font-bold text-xl text-gray-900">ACD</h1>
+                        <p class="text-xs text-gray-600">Actions Centrafrique Développement</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="nos-actions.html" class="nav-link">Nos Actions</a>
+                    <a href="qui-sommes-nous.html" class="nav-link active">Qui sommes-nous</a>
+                    <a href="nous-soutenir.html" class="nav-link">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="nous-soutenir.html" class="btn-primary hidden sm:inline-flex">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                        Faire un don
+                    </a>
+                    <button class="md:hidden mobile-menu-toggle">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="nos-actions.html" class="nav-link">Nos Actions</a>
+                    <a href="qui-sommes-nous.html" class="nav-link active">Qui sommes-nous</a>
+                    <a href="nous-soutenir.html" class="nav-link">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="nous-soutenir.html" class="btn-primary w-full text-center mt-4">Faire un don</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="font-heading font-bold text-4xl lg:text-6xl text-gray-900 mb-6">
+                        Qui 
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
+                            sommes-nous
+                        </span> ?
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                        Découvrez l'histoire, la mission et l'équipe d'Actions Centrafrique Développement, une association française engagée pour un développement durable en République Centrafricaine.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Histoire et mission -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900">
+                            Notre histoire
+                        </h2>
+                        <div class="space-y-4 text-gray-600 leading-relaxed">
+                            <p>
+                                <strong class="text-gray-900">Actions Centrafrique Développement (ACD)</strong> a été créée en 2018 par des personnes passionnées par l'Afrique et conscientes des défis auxquels fait face la République Centrafricaine.
+                            </p>
+                            <p>
+                                Face aux crises multiples qui touchent ce pays depuis plusieurs décennies, notre association s'est donnée pour mission de contribuer concrètement au relèvement et au développement socio-économique des communautés centrafricaines.
+                            </p>
+                            <p>
+                                Basée en France, ACD agit comme un pont entre les deux pays, facilitant les échanges, la coopération et le transfert de compétences pour un développement durable et inclusif.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-primary-50 p-6 rounded-xl">
+                            <h3 class="font-heading font-semibold text-xl text-gray-900 mb-3">Notre mission officielle</h3>
+                            <p class="text-gray-700 italic">
+                                "Contribuer à l'amélioration des conditions de vie des populations centrafricaines à travers des actions de développement économique, social, éducatif et de renforcement des capacités institutionnelles."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-xl">
+                            <img src="https://images.pexels.com/photos/6156968/pexels-photo-6156968.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                                 alt="Mission ACD en Centrafrique" 
+                                 class="w-full h-96 object-cover">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg">
+                            <div class="text-center">
+                                <div class="font-heading font-bold text-2xl text-primary-600">2018</div>
+                                <p class="text-sm text-gray-600">Création d'ACD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valeurs -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                        Nos valeurs
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Les principes qui guident notre action au quotidien
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-3">Transparence</h3>
+                        <p class="text-gray-600">Gestion transparente des fonds et communication claire sur nos actions et résultats.</p>
+                    </div>
+                    
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition-colors">
+                            <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-3">Solidarité</h3>
+                        <p class="text-gray-600">Engagement auprès des plus vulnérables avec respect et dignité humaine.</p>
+                    </div>
+                    
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-200 transition-colors">
+                            <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-3">Efficacité</h3>
+                        <p class="text-gray-600">Actions concrètes et mesurables avec un impact réel sur les bénéficiaires.</p>
+                    </div>
+                    
+                    <div class="card text-center group">
+                        <div class="w-16 h-16 bg-danger-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-danger-200 transition-colors">
+                            <svg class="w-8 h-8 text-danger-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-3">Durabilité</h3>
+                        <p class="text-gray-600">Projets pensés pour l'autonomisation et la pérennité à long terme.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Équipe dirigeante -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                        Notre équipe dirigeante
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Une équipe expérimentée et passionnée au service du développement
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                    <!-- Président -->
+                    <div class="card text-center group">
+                        <div class="relative mb-6">
+                            <div class="w-32 h-32 mx-auto bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center">
+                                <svg class="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                </svg>
+                            </div>
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L13.09 6.26L18 5L16.74 9.74L22 11L17.74 12.26L19 17L14.26 15.74L13 20L11.74 15.74L7 17L8.26 12.26L2 11L6.26 9.74L5 5L9.74 6.26L12 2Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="font-heading font-bold text-2xl text-gray-900 mb-2">Eric GABIRAULT</h3>
+                        <p class="text-primary-600 font-semibold mb-4">Président</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Passionné par l'Afrique et fort d'une expérience significative dans le domaine du développement, Eric Gabirault dirige ACD avec une vision claire : créer des ponts durables entre la France et la Centrafrique pour un développement équitable et inclusif.
+                        </p>
+                    </div>
+                    
+                    <!-- Secrétaire Général -->
+                    <div class="card text-center group">
+                        <div class="relative mb-6">
+                            <div class="w-32 h-32 mx-auto bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-full flex items-center justify-center">
+                                <svg class="w-16 h-16 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                </svg>
+                            </div>
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-secondary-600 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="font-heading font-bold text-2xl text-gray-900 mb-2">Annie Blanche GABIRAULT</h3>
+                        <p class="text-secondary-600 font-semibold mb-4">Secrétaire Général</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Responsable de la coordination des projets et des partenariats, Annie Blanche Gabirault apporte son expertise organisationnelle et sa connaissance approfondie des enjeux du développement en Afrique centrale.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Bureau et rôles -->
+                <div class="mt-12 bg-gray-50 p-8 rounded-2xl">
+                    <div class="text-center mb-8">
+                        <h3 class="font-heading font-bold text-2xl text-gray-900 mb-4">Structure associative</h3>
+                        <p class="text-gray-600 max-w-2xl mx-auto">
+                            ACD est structurée selon les principes de la loi 1901, avec un bureau élu démocratiquement et des responsabilités clairement définies.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Président</h4>
+                            <p class="text-sm text-gray-600">Direction stratégique et représentation externe</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Secrétaire Général</h4>
+                            <p class="text-sm text-gray-600">Coordination des projets et partenariats</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Trésorier</h4>
+                            <p class="text-sm text-gray-600">Gestion financière et transparence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partenaires -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                        Nos partenaires
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Un réseau en développement pour maximiser notre impact
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-3">Organismes français</h3>
+                        <p class="text-gray-600">Collaboration avec les institutions françaises de coopération et développement.</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-3">Partenaires locaux</h3>
+                        <p class="text-gray-600">Réseaux d'ONG et associations locales en République Centrafricaine.</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-gray-900 mb-3">Entreprises</h3>
+                        <p class="text-gray-600">Partenariats avec des entreprises françaises et centrafricaines engagées.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statuts et transparence -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+                            Transparence et légalité
+                        </h2>
+                        <p class="text-xl text-gray-600">
+                            Un engagement total vers la transparence et la conformité légale
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-primary-50 p-6 rounded-xl">
+                            <h3 class="font-heading font-semibold text-xl text-gray-900 mb-4">
+                                <svg class="w-6 h-6 inline mr-2 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Statut légal
+                            </h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• Association loi 1901</li>
+                                <li>• Siège social : 7 allée Jean Zay, 77200 Torcy</li>
+                                <li>• SIRET en cours d'obtention</li>
+                                <li>• Déclaration préfecture conforme</li>
+                            </ul>
+                            <a href="#" class="inline-flex items-center text-primary-600 hover:text-primary-700 mt-4 font-semibold">
+                                Télécharger nos statuts
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <div class="bg-secondary-50 p-6 rounded-xl">
+                            <h3 class="font-heading font-semibold text-xl text-gray-900 mb-4">
+                                <svg class="w-6 h-6 inline mr-2 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                Engagement transparence
+                            </h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• Comptes certifiés annuellement</li>
+                                <li>• Rapports d'activité publics</li>
+                                <li>• Suivi des projets documenté</li>
+                                <li>• Reçus fiscaux conformes</li>
+                            </ul>
+                            <p class="mt-4 text-sm text-gray-600">
+                                Rapport financier disponible sur demande
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-gradient-to-r from-primary-600 to-secondary-600">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-3xl mx-auto text-white space-y-6">
+                    <h2 class="font-heading font-bold text-3xl lg:text-4xl">
+                        Rejoignez notre mission
+                    </h2>
+                    <p class="text-xl opacity-90">
+                        Vous partagez nos valeurs ? Vous souhaitez contribuer au développement de la Centrafrique ? Contactez-nous !
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="nous-soutenir.html" class="bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 rounded-xl font-semibold transition-colors inline-flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            Nous soutenir
+                        </a>
+                        <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-xl font-semibold transition-colors inline-flex items-center justify-center">
+                            Nous contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary-600 to-secondary-600 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 6.26L18 5L16.74 9.74L22 11L17.74 12.26L19 17L14.26 15.74L13 20L11.74 15.74L7 17L8.26 12.26L2 11L6.26 9.74L5 5L9.74 6.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-lg">ACD</h3>
+                            <p class="text-sm text-gray-400">Actions Centrafrique Développement</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Association loi 1901 d'aide au développement socio-économique en République Centrafricaine.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="nos-actions.html" class="text-gray-300 hover:text-white transition-colors">Nos Actions</a></li>
+                        <li><a href="qui-sommes-nous.html" class="text-gray-300 hover:text-white transition-colors">Qui sommes-nous</a></li>
+                        <li><a href="nous-soutenir.html" class="text-gray-300 hover:text-white transition-colors">Nous Soutenir</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-4">Contact</h4>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-gray-300">7 allée Jean Zay</p>
+                        <p class="text-gray-300">77200 Torcy</p>
+                        <p class="text-gray-300">Seine-et-Marne, France</p>
+                        <a href="mailto:contact@actions-centrafrique.org" class="text-primary-400 hover:text-primary-300 transition-colors">
+                            contact@actions-centrafrique.org
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-semibold text-lg mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-full flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-full flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400 text-center">
+                <p>&copy; 2024 Actions Centrafrique Développement. Association loi 1901 - Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
