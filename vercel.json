@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build && cp *.html dist/ && cp -r css dist/ && cp -r js dist/",
+  "buildCommand": "npm run build && node build.cjs",
   "outputDirectory": "dist",
   "headers": [
     {
