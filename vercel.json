@@ -1,13 +1,6 @@
 {
-  "framework": "vite",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build && cp *.html dist/ && cp -r css dist/ && cp -r js dist/",
   "outputDirectory": "dist",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
