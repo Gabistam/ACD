@@ -1,6 +1,8 @@
 {
   "buildCommand": "npm run build && node build.cjs",
   "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
